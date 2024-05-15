@@ -15,7 +15,7 @@ server.use(express.urlencoded({extended:true}));
 server.use("/", router)
 //CHAMA O MÉTODO DA ROTA ESPECÍFICA?
 
-server.listen(3000, function(){
-	console.log("Porta 3000");
+server.listen(5000, function(){
+	console.log("Porta 5000");
 });
 

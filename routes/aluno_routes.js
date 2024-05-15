@@ -11,7 +11,9 @@ CHAMA O MÉTODO, ESPECIFICANDO QUE ELE É DO TIPO "GET", ENTÃO SÓ VAI EXIBIR D
 SEM ENVIAR NADA
 */
 router.get("/aluno", aluno.all);
+router.post('/aluno', aluno.create);
+router.put('/aluno/:matricula', aluno.update);
+router.delete('/aluno/:matricula', aluno.delete);
 
-/* !!!!!!!!!! DESAFIO: DEFINIR DEMAIS ROTAS PARA O RESTANTE DO CRUD !!!!!!!! */
 
 export {router};
