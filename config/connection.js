@@ -6,12 +6,10 @@ async function connect() {
 		
 		const mysql = mysql2;
 		//mysql://usuario:senha@servidor:porta/banco - conexao assincrona
-		const connection = await mysql.createConnection("mysql://root:@localhost:3306/universidade");
+		const connection = await mysql.createConnection("mysql://root:@localhost:3306/n2");
 		console.log("Conectado ao SGBD MySql");
-		//SE ESTIVER CONECTADO, JOGA A VARIÁVEL PARA O RETURN
 		global.connection = connection;
 		return connection;
 }
 
-//PEGA A VARIÁVEL RETORNADA PELA FUNCAO CONNECT
 export default connect;
